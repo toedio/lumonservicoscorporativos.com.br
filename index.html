@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumon Serviços Corporativos</title>
+    <style>
+        :root {
+            /* Cores Atualizadas */
+            --cor-primaria: #032733;
+            --cor-secundaria: #f1efe8;
+            --cor-fundo: #f5f7f9;
+            --cor-texto: #1f1f1f;
+            --cor-clara: #fff;
+            --cor-subtexto: #555;
+            --cor-footer: #ccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--cor-texto);
+            background-color: var(--cor-fundo);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--cor-primaria);
+            color: var(--cor-clara);
+            padding: 20px 40px;
+        }
+
+        header img {
+            height: 250px;
+            background-color: var(--cor-primaria);
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        header div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav {
+            background: var(--cor-secundaria);
+            padding: 10px 40px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: var(--cor-primaria); /* Alterado para contraste */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #555; /* Um tom mais escuro para o hover */
+        }
+
+        .hero {
+            background: url("banner.png") center/cover no-repeat;
+            background-color: rgba(0, 0, 0, 0.6);
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--cor-clara);
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            padding: 30px 0;
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service {
+            background: var(--cor-clara);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .service h3 {
+            color: var(--cor-primaria); /* Alterado para contraste */
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            color: var(--cor-subtexto);
+        }
+
+        #about {
+            background: var(--cor-clara);
+        }
+
+        #about p {
+            color: var(--cor-subtexto);
+            padding: 20px;
+            margin: 10px 30px;
+            text-align: center; /* Centralizado para melhor leitura */
+        }
+
+        #contato {
+            padding: 0;
+            background: var(--cor-secundaria);
+        }
+
+        .contact-centered {
+            color: var(--cor-primaria); /* Alterado para contraste */
+            text-align: center;
+            padding: 40px 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-centered h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-centered p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--cor-primaria); /* Alterado para a cor primária */
+            color: var(--cor-secundaria); /* Alterado para contraste */
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+
+            nav {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logo Lumon Serviços Corporativos" />
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Soluções consistentes para estruturas dinâmicas.</h2>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align:center; margin-bottom: 20px;">Sobre nós</h2>
+        <p>
+            A Lumon atua no apoio técnico-operacional de empresas que exigem agilidade com rigor, estrutura com
+            flexibilidade e operação com controle. Oferecemos um conjunto completo de serviços voltados à sustentação e
+            viabilização de operações empresariais em ambientes regulados, digitais ou em expansão. Mais do que
+            fornecer
+            suporte, estruturamos as bases que permitem que negócios avancem com solidez e previsibilidade.
+        </p>
+    </section>
+
+    <section id="servicos">
+        <h2 style="text-align:center; margin-bottom: 40px;">Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Estruturas Corporativas</h3>
+                <p>Implementação e administração de estruturas corporativas.</p>
+            </div>
+            <div class="service">
+                <h3>Apoio Jurídico e Documental</h3>
+                <p>Apoio jurídico e documental para iniciativas empresariais.</p>
+            </div>
+            <div class="service">
+                <h3>Gestão Administrativa</h3>
+                <p>Gestão de rotinas administrativas estratégicas.</p>
+            </div>
+            <div class="service">
+                <h3>Operações em Crescimento</h3>
+                <p>Estabilização de operações em transformação ou crescimento.</p>
+            </div>
+            <div class="service">
+                <h3>Organização Empresarial</h3>
+                <p>Organização de ativos e fluxos empresariais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contact-centered">
+            <h3>Entre em Contato</h3>
+            <p>Rua dos Toneleiros, 50. Centro. São Paulo, SP</p>
+            <p>contato@jarvisadm.com.br</p>
+            <p>(11) 4002-8922</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Lumon Serviços Corporativos. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
